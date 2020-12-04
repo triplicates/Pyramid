@@ -6,7 +6,7 @@
 
 I should:
 
-- Displayed pyramid in browser
+- Display pyramid in browser
 - Display numbers in order in the cells of the pyramid
 - Highlight prime numbers
 
