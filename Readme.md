@@ -1,6 +1,6 @@
 ## `task` Pyramid
 
-![Pyramid logo](./assets/images/git.png)
+![Pyramid logo](./src/assets/images/git.png)
 
 ### Description
 
