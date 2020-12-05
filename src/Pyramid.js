@@ -1,8 +1,8 @@
 class Pyramid{
     constructor(rows){
         this.rowsCount = rows || 12;
-        this.row = {className: "row", root: "pyramid", anim: "show"};
-        this.brick = {className: "box", root: this.row.className};
+        this.row = {className: "row", root: "pyramid"};
+        this.brick = {className: "brick", root: this.row.className};
     }
     Errors(){
         let ERROR = [];
@@ -52,11 +52,11 @@ class Pyramid{
     }
 
     controlNumbers(){
-        let blocks = document.querySelectorAll(`.box`);
+        let blocks = document.querySelectorAll(`.brick`);
             for (let i = 0; i < blocks.length; i++) { 
                 blocks[i].textContent = i + 1;
                 if(this.isSimple(Number(blocks[i].textContent))) {
-                    blocks[i].classList.add('box_marked');
+                    blocks[i].classList.add('brick_marked');
                     
                 } 
             }
