@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pyramid</title>
     <link rel="stylesheet" href="./styles/remove.css">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/pyramid.css">
 </head>
 <body>
     <main class="main">
         <header class="header">
-            <input class="header__counter" type="number" min="3" max="220" placeholder="Rows">
+            <div class="container header__container">
+                <div class="header__rows">
+                    <label for="">Количество строк:</label>
+                    <input class="header__counter" type="number" min="3" max="220">
+                </div>
+            </div>
+           
         </header>
-        <div class="pyramid__observer">
+        <div class="camera">
             <div class="pyramid"></div>
         </div>
         <footer class="footer">
             <div class="container footer__container">
-                <picture class="pyramid__logo">
-                    <img src="./assets/images/pyramid.png" alt="Pyramid logo">
+                <picture class="footer__logo">
+                    <img src="./assets/images/pyramid.png" alt="pyramid logo">
                 </picture>
             </div>
-           
         </footer>
+    </main>
         
     </main>
     <script src="Pyramid.js"></script>
