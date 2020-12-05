@@ -1,0 +1,11 @@
+.footer {
+  width: 100%;
+  font-family: serif;
+  font-size: 32px;
+}
+.footer__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px 0;
+}

@@ -1,0 +1,7 @@
+@import "variables.css";
+@import "block/container.css";
+@import "component/main.css";
+@import "component/header.css";
+@import "component/camera.css";
+@import "component/pyramid.css";
+@import "component/footer.css";
