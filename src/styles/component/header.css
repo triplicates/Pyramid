@@ -1,0 +1,21 @@
+@import "../variables.css";
+
+.header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-basis: 42px;
+}
+
+.header__counter {
+  font-family: sans-serif;
+  font-size: 16px;
+  background: var(--color-backround);
+  width: 64px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-bottom: 2px solid var(--color-main);
+}
+.header__counter_error {
+  border: 2px solid var(--color-text-error);
+}
