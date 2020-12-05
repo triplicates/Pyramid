@@ -1,6 +1,8 @@
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _instanceof(left, right) { if (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) { return !!right[Symbol.hasInstance](left); } else { return left instanceof right; } }
+
+function _classCallCheck(instance, Constructor) { if (!_instanceof(instance, Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
@@ -13,11 +15,10 @@ var Pyramid = /*#__PURE__*/function () {
     this.rowsCount = rows || 12;
     this.row = {
       className: "row",
-      root: "pyramid",
-      anim: "show"
+      root: "pyramid"
     };
     this.brick = {
-      className: "box",
+      className: "brick",
       root: this.row.className
     };
   }
@@ -85,13 +86,13 @@ var Pyramid = /*#__PURE__*/function () {
   }, {
     key: "controlNumbers",
     value: function controlNumbers() {
-      var blocks = document.querySelectorAll(".box");
+      var blocks = document.querySelectorAll(".brick");
 
       for (var i = 0; i < blocks.length; i++) {
         blocks[i].textContent = i + 1;
 
         if (this.isSimple(Number(blocks[i].textContent))) {
-          blocks[i].classList.add('box_marked');
+          blocks[i].classList.add('brick_marked');
         }
       }
     }
