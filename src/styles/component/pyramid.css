@@ -3,8 +3,8 @@
 .pyramid {
   display: flex;
   flex-direction: column;
-  flex-basis: 80%;
-  min-height: 100%;
+  width: 20000px;
+  height: 100%;
 }
 
 .brick {
