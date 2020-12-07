@@ -30,7 +30,7 @@ class Pyramid{
     }
 
     createBrick(count = 1){
-        for (let i = 0; i < count; i++) {
+        for (let i = 1; i < count * 2; i++) {
            this.createElement("div", this.brick)
         }
     }
