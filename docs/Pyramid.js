@@ -63,7 +63,7 @@ var Pyramid = /*#__PURE__*/function () {
     value: function createBrick() {
       var count = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
 
-      for (var i = 0; i < count; i++) {
+      for (var i = 1; i < count * 2; i++) {
         this.createElement("div", this.brick);
       }
     }
