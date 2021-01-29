@@ -16,4 +16,4 @@ Development: 2,5 hours
 
 #### ✏️ Links
 
-See work [here](https://triplicates.github.io/Pyramid/)
+See work [here](https://tripplicate.github.io/Pyramid/)
